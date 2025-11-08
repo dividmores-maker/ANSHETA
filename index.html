@@ -19,6 +19,12 @@
     }
   </style>
   ...
+  <!-- Firebase App (always required) -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+
+<!-- Firebase Realtime Database -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+
 </head>
 
 <meta charset="utf-8" />
@@ -127,24 +133,6 @@ th{background:rgba(255,255,255,0.02);font-weight:700}
 .saved-note{font-size:13px;color:#b9d1ff;margin-top:8px}
 </style>
 </head>
-<!-- Firebase App (المهم لكل شيء) -->
-<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
-<!-- Firebase Database -->
-<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js"></script>apiKey: "AIzaSyC07fg1eWmIlWhq-aVKwIE3YJEsDl8oH_M",
-<script>
-  // Initialize Firebaseconst firebaseConfig = {
-  apiKey: "AIzaSyC07fg1eWmIlWhq-aVKwIE3YJEsDl8oH_M",
-  authDomain: "divid-mores.firebaseapp.com",
-  databaseURL: "https://divid-mores-default-rtdb.firebaseio.com",
-  projectId: "divid-mores",
-  storageBucket: "divid-mores.firebasestorage.app",
-  messagingSenderId: "96902794085",
-  appId: "1:96902794085:web:38711681e4f7251cbf2f8c"
-};
-  const app = firebase.initializeApp(firebaseConfig);
-  const database = firebase.database();
-</script>
-
 <body>
 
 <!-- LOGIN WRAPPER -->
@@ -300,6 +288,15 @@ th{background:rgba(255,255,255,0.02);font-weight:700}
 </div>
 
 <script>
+const firebaseConfig = {
+  apiKey: "AIzaSyC07fg1eWmIlWhq-aVKwIE3YJEsDl8oH_M",
+  authDomain: "divid-mores.firebaseapp.com",
+  databaseURL: "https://divid-mores-default-rtdb.firebaseio.com",
+  projectId: "divid-mores",
+  storageBucket: "divid-mores.firebasestorage.app",
+  messagingSenderId: "96902794085",
+  appId: "1:96902794085:web:38711681e4f7251cbf2f8c"
+};
 /* ================== Login / Role control ================== */
 const PASSWORD = '123'; // كلمة المرور لـ لجنة التنظيم
 
@@ -863,5 +860,7 @@ if(tbDash) tbDash.addEventListener('click', ()=> renderDashboard());
 /* ===== End of embedded original app code ===== */
 
 </script>
+</script>
+
 </body>
 </html>
